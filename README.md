@@ -2,7 +2,7 @@
 
 Angular notification bar component for Angular 2+ projects.
 
-This is a modefied version from [angular2-notification-bar](https://github.com/Hydrane/angular2-notification-bar) project to work with all Angular 2+ versions.
+This is a modified version from [angular2-notification-bar](https://github.com/Hydrane/angular2-notification-bar) project to work with all Angular 2+ versions.
 
 The reason is why i created this project is the old project is not working with Angular 4.1.x+ and there is alot of modifications on this project to work with webpack 2.
 
