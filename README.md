@@ -15,7 +15,7 @@ npm install ngx-notification-bar --save
 # Usage
 
 ```javascript
-import { NotificationBarModule } from 'ngx-notification-bar'
+import { NotificationBarModule } from 'ngx-notification-bar/release'
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -32,6 +32,8 @@ export class AppModule {
 ```
 
 ```javascript
+import { NotificationBarService } from 'ngx-notification-bar/release';
+
 this.notificationBarService.create({ message: 'USER_SAVED', type: NotificationType.Success});
 ```
 
