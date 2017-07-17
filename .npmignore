@@ -1,0 +1,7 @@
+.idea/
+example/
+node_modules/
+.gitignore
+index.html
+tsconfig.json
+webpack.config.js
