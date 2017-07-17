@@ -1,6 +1,6 @@
 {
   "name": "ngx-notification-bar",
-  "version": "1.2.4",
+  "version": "0.1.1",
   "description": "Notification bar for Angular",
   "main": "./release/ngx-notification-bar.umd.js",
   "module": "./index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:wnabil/ngx-notification-bar.git"
+    "url": "git+ssh://git@github.com/wnabil/ngx-notification-bar.git"
   },
   "author": "Wassem Nabil",
   "license": "MIT",
@@ -60,5 +60,8 @@
   "bugs": {
     "url": "https://github.com/wnabil/ngx-notification-bar"
   },
-  "homepage": "https://github.com/wnabil/ngx-notification-bar#readme"
+  "homepage": "https://github.com/wnabil/ngx-notification-bar#readme",
+  "directories": {
+    "example": "example"
+  }
 }
