@@ -34,6 +34,8 @@ export class AppModule {
 ```javascript
 import { NotificationBarService } from 'ngx-notification-bar/release';
 
+constractor(private notificationBarService:NotificationBarService){}
+
 this.notificationBarService.create({ message: 'USER_SAVED', type: NotificationType.Success});
 ```
 
