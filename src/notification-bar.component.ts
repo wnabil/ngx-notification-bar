@@ -6,7 +6,7 @@ import {
 import { NotificationBarService } from './notification-bar.service';
 import { Notification, NotificationType } from '../index';
 import { MessagesConfig } from './message-config';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs/Subscription';
 
 
 
