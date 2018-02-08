@@ -1,6 +1,6 @@
 import {
     Component, OnInit, trigger, state, style, transition, animate, Optional, Inject,
-    OpaqueToken, OnDestroy
+    InjectionToken, OnDestroy
 } from '@angular/core';
 
 import { NotificationBarService } from './notification-bar.service';
@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 
 
 
-export const MESSAGES_CONFIG = new OpaqueToken('notification-bar.messages.config');
+export const MESSAGES_CONFIG = new InjectionToken('notification-bar.messages.config');
 
 @Component({
     selector: 'notification-bar',
