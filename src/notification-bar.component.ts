@@ -1,5 +1,6 @@
+import { trigger, state, style, transition, animate } from '@angular/animations'
 import {
-    Component, OnInit, trigger, state, style, transition, animate, Optional, Inject,
+    Component, OnInit, Optional, Inject,
     InjectionToken, OnDestroy
 } from '@angular/core';
 
