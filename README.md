@@ -15,11 +15,16 @@ npm install ngx-notification-bar --save
 # Usage
 
 ```javascript
-import { NotificationBarModule } from 'ngx-notification-bar/release'
+import { NotificationBarModule } from 'ngx-notification-bar'
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, NotificationBarModule],
+    imports: [
+      BrowserAnimationsModule, // optional for animations
+      BrowserModule,
+      NotificationBarModule
+    ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
@@ -32,7 +37,7 @@ export class AppModule {
 ```
 
 ```javascript
-import { NotificationBarService } from 'ngx-notification-bar/release';
+import { NotificationBarService } from 'ngx-notification-bar';
 
 constructor(private notificationBarService:NotificationBarService){}
 

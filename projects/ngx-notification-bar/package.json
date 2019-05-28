@@ -1,0 +1,30 @@
+{
+  "name": "ngx-notification-bar",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnabil/ngx-notification-bar.git"
+  },
+  "keywords": [
+    "angular",
+    "notification",
+    "bar",
+    "typescript",
+    "ng",
+    "ngx",
+    "notify"
+  ],
+  "author": "Wassem Nabil <w.nabil@orangestudio.com> (http://arabianlolers.com)",
+  "bugs": {
+    "url": "https://github.com/wnabil/ngx-notification-bar/issues"
+  },
+  "homepage": "https://github.com/wnabil/ngx-notification-bar#readme"
+}

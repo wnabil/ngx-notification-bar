@@ -1,6 +1,6 @@
 import { Injectable, EventEmitter } from '@angular/core';
 
-import { Notification } from '../index';
+import { Notification } from './notification-bar.models';
 
 /**
  * A service to create notification, It can be used from any component or guard

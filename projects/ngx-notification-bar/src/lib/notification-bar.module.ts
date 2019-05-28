@@ -8,12 +8,12 @@ import { MessagesConfig } from './message-config';
 
 
 @NgModule({
-    imports:      [
-        CommonModule
+    imports: [
+        CommonModule,
     ],
-    declarations: [ NotificationBarComponent ],
-    providers: [ NotificationBarService ],
-    exports: [ NotificationBarComponent ]
+    declarations: [NotificationBarComponent],
+    providers: [NotificationBarService],
+    exports: [NotificationBarComponent]
 })
 export class NotificationBarModule {
 

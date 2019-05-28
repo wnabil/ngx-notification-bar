@@ -1,15 +1,13 @@
-import { trigger, state, style, transition, animate } from '@angular/animations'
+import { trigger, state, style, transition, animate } from '@angular/animations';
 import {
     Component, OnInit, Optional, Inject,
     InjectionToken, OnDestroy
 } from '@angular/core';
 
 import { NotificationBarService } from './notification-bar.service';
-import { Notification, NotificationType } from '../index';
+import { Notification, NotificationType } from './notification-bar.models';
 import { MessagesConfig } from './message-config';
-import { Subscription } from 'rxjs/Subscription';
-
-
+import { Subscription } from 'rxjs';
 
 export const MESSAGES_CONFIG = new InjectionToken('notification-bar.messages.config');
 
@@ -20,7 +18,6 @@ export const MESSAGES_CONFIG = new InjectionToken('notification-bar.messages.con
           position: relative;
           display: block;
         }
-        
         .notifications-container {
           position: fixed;
           top: 0px;
@@ -31,38 +28,31 @@ export const MESSAGES_CONFIG = new InjectionToken('notification-bar.messages.con
           z-index: 6;
           overflow: hidden;
         }
-        
         .notification {
           position: relative;
           text-align: center;
           font-size: 12px;
           color: #fff;
         }
-        
         .message {
           padding: 0 12px;
         }
-        
         .error {
           background-color: #F64747;
           border-bottom: 1px solid #f31515;
         }
-        
         .success {
           background-color: #03C9A9;
           border-bottom: 1px solid #02aa8f;
         }
-        
         .warning {
           background-color: #F7CA18;
           border-bottom: 1px solid #e7ba08;
         }
-        
         .info {
           background-color: #0c6997;
           border-bottom: 1px solid #0c6997;
         }
-        
         .close-click {
           font-size: 22px;
           cursor: pointer;
@@ -132,7 +122,7 @@ export class NotificationBarComponent implements OnInit, OnDestroy {
     ngOnInit() { }
 
     addNotification(notification: Notification) {
-        let newNotification = Object.assign({}, this.defaults, notification);
+        const newNotification = Object.assign({}, this.defaults, notification);
         newNotification.typeValue = NotificationType[newNotification.type].toLowerCase();
         if (this.config && this.config.messages) {
             newNotification.message = this.config.messages[notification.message] || notification.message;
@@ -148,7 +138,7 @@ export class NotificationBarComponent implements OnInit, OnDestroy {
     }
 
     hideNotification(notification: Notification) {
-        let index = this.notifications.indexOf(notification);
+        const index = this.notifications.indexOf(notification);
 
         this.notifications.splice(index, 1);
     }

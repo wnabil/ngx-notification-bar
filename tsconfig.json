@@ -1,25 +1,29 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "",
-    "declaration": true,
-    "stripInternal": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
     "module": "es2015",
     "moduleResolution": "node",
-    "noEmitOnError": false,
-    "outDir": "./release",
-    "rootDir": ".",
-    "sourceMap": true,
-    "inlineSources": true,
-    "lib": ["es2015", "dom"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "target": "es5",
-    "skipLibCheck": true
-  },
-  "files": [
-    "index.ts"
-  ],
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ngx-notification-bar": [
+        "dist/ngx-notification-bar"
+      ],
+      "ngx-notification-bar/*": [
+        "dist/ngx-notification-bar/*"
+      ]
+    }
   }
 }
