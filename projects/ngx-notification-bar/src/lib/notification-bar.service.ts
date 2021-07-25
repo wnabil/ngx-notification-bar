@@ -10,11 +10,16 @@ export class NotificationBarService {
 
 
     onCreate = new EventEmitter<Notification>();
+    onClose = new EventEmitter<Notification>();
 
     constructor() {
     }
 
     create(notification: Notification) {
         this.onCreate.emit(notification);
+    }
+
+    close(notification: Notification) {
+        this.onClose.emit(notification);
     }
 }

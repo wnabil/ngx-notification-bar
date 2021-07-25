@@ -111,12 +111,13 @@ export class NotificationBarComponent implements OnInit, OnDestroy {
     };
 
     subscription: Subscription;
-
+    closeSubscription: Subscription;
     constructor(
         private notificationBarService: NotificationBarService,
         @Inject(MESSAGES_CONFIG) @Optional() private config?: MessagesConfig
     ) {
         this.subscription = this.notificationBarService.onCreate.subscribe(this.addNotification.bind(this));
+        this.notificationBarService.onClose.subscribe(this.hideNotification.bind(this));
     }
 
     ngOnInit() { }
@@ -145,6 +146,7 @@ export class NotificationBarComponent implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         this.subscription.unsubscribe();
+        this.closeSubscription.unsubscribe();
     }
 
     hideOnHover(notification: Notification) {
