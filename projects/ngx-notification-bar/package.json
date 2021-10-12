@@ -1,6 +1,6 @@
 {
   "name": "ngx-notification-bar",
-  "version": "1.12.1",
+  "version": "1.12.2",
   "license": "MIT",
   "private": false,
   "dependencies": {
