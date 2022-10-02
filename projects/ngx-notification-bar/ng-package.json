@@ -3,6 +3,5 @@
   "dest": "../../dist/ngx-notification-bar",
   "lib": {
     "entryFile": "src/public_api.ts"
-  },
-  "whitelistedNonPeerDependencies": ["."]
+  }
 }

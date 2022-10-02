@@ -1,13 +1,13 @@
 {
   "name": "ngx-notification-bar",
-  "version": "1.12.2",
+  "version": "1.14.0",
   "license": "MIT",
   "private": false,
   "dependencies": {
   },
   "peerDependencies": {
-    "@angular/common": "^12.0.2",
-    "@angular/core": "^12.0.2"
+    "@angular/common": "^14.2.4",
+    "@angular/core": "^14.2.4"
   },
   "repository": {
     "type": "git",

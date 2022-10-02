@@ -170,5 +170,8 @@
       }
     }
   },
-  "defaultProject": "ngx-notification-bar-demo"
+  "defaultProject": "ngx-notification-bar-demo",
+  "cli": {
+    "analytics": false
+  }
 }

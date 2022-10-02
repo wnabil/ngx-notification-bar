@@ -17,7 +17,7 @@ import { MessagesConfig } from './message-config';
 })
 export class NotificationBarModule {
 
-    static forRoot(config: MessagesConfig): ModuleWithProviders {
+    static forRoot(config: MessagesConfig): ModuleWithProviders<NotificationBarModule> {
         return {
             ngModule: NotificationBarModule,
             providers: [
